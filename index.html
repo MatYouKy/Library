@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task2.css">
+    <title>Task 2</title>
+</head>
+<body>
+    <main class="main-section">
+        <h1>Library</h1>
+        <section class="add-books">
+            <h2 class="sub-title">Add Book</h2>
+            <form class="form">
+                <input name="title"type="text" placeholder="Title" class="input" required
+                minlength="1">
+                <input name="author"type="text" placeholder="Author" class="input" required
+                minlength="3">
+                <input name="priority"type="number" placeholder="Priority" class="input" required
+                min="1" max="5">
+                <select name="genere" id="genre-select" class="input genere-select" required>
+                    <option value="" class="genre-select">--Please choose an option--</option>
+                    <option value="thriller" class="genere-item">Thriller</option>
+                    <option value="horror" class="genere-item">Horror</option>
+                    <option value="romance" class="genere-item">Romance</option>
+                </select>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </section>
+
+        <section class="show-books">
+            <h2 class="sub-title">Book List</h2>
+            <table class="content-table">
+                <thead class="list-books">
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Genere</th>
+                        <th>Priority</th>
+                    </tr>
+                </thead>
+                <tbody id="list-books"></tbody>
+            </table>
+        </section>
+
+    </main>
+    <script src="task2.js"></script>
+</body>
+</html>

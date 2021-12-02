@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-section {
+    text-align: center;
+}
+
+.add-books{
+    padding-bottom: 30px;
+    border-bottom: 2px solid black;
+}
+
+.sub-title {
+    margin: 20px 0;
+}
+
+.form {
+    margin: 0 auto;
+    width: 300px;
+}
+
+.submit-button {
+    display: block;
+    margin: 0 auto;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.input {
+    margin: 10px 0;
+    width: 250px;
+    padding: 5px;
+}
+
+.genre-select {
+    cursor: pointer;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px auto;
+    min-width: 400px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0 , 0, 0.15);
+}
+
+.list-books {
+    background-color: rgb(197, 197, 197);
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    min-width: 150px;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
